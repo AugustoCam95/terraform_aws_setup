@@ -1,19 +1,19 @@
 provider "aws" {
- region = "us-east-2"
+ region = "us-east-1"
 }
 
 resource "aws_instance" "my_ec2" {
-  ami           = "ami-06c68f701d8090592" # Replace this with the valid AMI ID
-  instance_type = "t2.micro"
-  # other configurations
+	  ami = "ami-0195204d5dce06d99"
+	  instance_type = "t2.micro"
+	  tags = {
+		  Name = "eccezinho"
+	  }
 }
 
-
-
-resource "aws_s3_bucket" "my_bucket" {
- bucket = "joseaugusto"
- tags = {
- Name = "MyS3Bucket"
-  Environment = "Test"
- }
+resource "aws_s3_bucket" "mybucket" {
+  bucket = "joseaugusto"
+  tags = {
+    Name = "MyBucket"
+    Environment = "Test"
+  }
 }

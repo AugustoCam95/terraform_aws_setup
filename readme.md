@@ -9,3 +9,4 @@ José Augusto Câmara Filho
 ![](terraform_plan.png)
 ![](terraform_apply.png)
 ![](terraform_destroy.png)
+![](aws_bucket.png)
